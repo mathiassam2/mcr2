@@ -1,0 +1,207 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #292b2c; /* Dark gray color */
+    /*margin: 0;*/
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-text {
+    text-align: center;
+}
+
+h2 {
+    /*font-size: 3em;*/
+    color: #ff3366;
+}
+
+.canvasBtn-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.canvasBtn {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    transition: .3s;
+    margin-top: 1rem;
+}
+
+.canvasBtn:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+.small-text {
+    color: rgba(255, 51, 102, 0.6); /* Adjust the alpha value (0.0 to 1.0) as needed */
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-no {
+    /* Add any additional styling you need for the buttons */
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border: none;
+}
+
+.btn-no:hover {
+    opacity: 0;
+}
+
+.image-container {
+    position: relative;
+    /*width: 500px; */
+    height: 400px;
+    background: url('assets/img2.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#drawCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.muahhh-text {
+    color: #ff3366;
+}
+
+.lips-image {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+.btn-23,
+.btn-23 *,
+.btn-23 :after,
+.btn-23 :before,
+.btn-23:after,
+.btn-23:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-23 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: rgba(255, 51, 102, 0.6);
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-23:disabled {
+  cursor: default;
+}
+
+.btn-23:-moz-focusring {
+  outline: auto;
+}
+
+.btn-23 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-23 [hidden] {
+  display: none;
+}
+
+.btn-23 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-23 span {
+  display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+
+.btn-23 .marquee {
+  --spacing: 5em;
+  --start: 0em;
+  --end: 5em;
+  -webkit-animation: marquee 1s linear infinite;
+  animation: marquee 1s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  opacity: 0;
+  position: relative;
+  text-shadow: #fff var(--spacing) 0, #fff calc(var(--spacing) * -1) 0,
+    #fff calc(var(--spacing) * -2) 0;
+}
+
+.btn-23:hover .marquee {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+
+.btn-23:hover .text {
+  opacity: 0;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(var(--start));
+  }
+
+  to {
+    transform: translateX(var(--end));
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(var(--start));
+  }
+
+  to {
+    transform: translateX(var(--end));
+  }
+}
+
+
+
+
+/* Add more styles as needed */
